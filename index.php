@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="result.php" method="get">
+        <label for="censored-word">inserisci la parola da censurare</label>
+        <input type="text" name="censored" id="censored-word"> <br>
+        <label for="text-input">inserisci il testo</label>
+        <input type="textarea" name="input_text" id="text-input"> <br>
+        <button type="submit"> invia </button>
+    </form>
 </body>
 </html>
