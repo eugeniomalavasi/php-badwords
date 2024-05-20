@@ -1,0 +1,26 @@
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 3rem;
+    background-color: orange;
+    padding: 2rem;
+    border-radius: 20px;
+    font-family: "Jaro", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
