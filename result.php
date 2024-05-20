@@ -17,12 +17,29 @@ $text = $_GET["input_text"];
     <p>
         <?php
         echo $text;
+        ?>
+    </p>
+    <p>
+        <?php
         echo 'il testo inserito è lungo: ' . strlen($text) . ' caratteri';
         ?>
     </p>
 
+    <h2>paragrafo censurato</h2>
+    <p>
+        <?php
+        $result_text = str_replace($censored_word, "***", $text);
+        echo $result_text;
+        ?>
+    </p>
+    <p>
+        <?php
+        echo strlen($result_text);
+        ?>
+    </p>
+
     <form action="index.php">
-        <button type="sumbmit">torna alla home</button>
+        <button type="submit">torna alla home</button>
     </form>
 
 </body>
